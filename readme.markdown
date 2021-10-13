@@ -1,4 +1,4 @@
-The official branch is: https://github.com/fabioz/startexplorer
+The official branch is: https://github.com/jpstotz/startexplorer
 
 
 StartExplorer
@@ -6,12 +6,7 @@ StartExplorer
 
 Just drag-and-drop the button to the Eclipse menu bar to install the plug-in:<br/>
 
-<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=641101" title="Drag and drop into a running Eclipse workspace to install StartExplorer">
-  <img src="https://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/installbutton.png"/>
-</a>
-
-Eclipse-Update-URL: `https://fabioz.github.com/startexplorer/update/`
-or install with [Nodeclipse CLI Installer](https://github.com/Nodeclipse/nodeclipse-1/tree/master/org.nodeclipse.ui/templates) `nodeclipse install startexplorer`
+Eclipse-Update-URL: `https://jpstotz.github.io/startexplorer/update/`
 
 About
 -----
@@ -25,7 +20,7 @@ Help Wanted
 
 It seems that there are a lot of open issues on GitHub, but most are actually only TODOs and are labelled with low-priority. 
 
-The known bugs which are worth taking a look at are: [help-wanted bugs](https://github.com/fabioz/startexplorer/issues?q=is%3Aissue+is%3Aopen+label%3Ahelp-wanted)
+The known bugs which are worth taking a look at are: [help-wanted bugs](https://github.com/jpstotz/startexplorer/issues?q=is%3Aissue+is%3Aopen+label%3Ahelp-wanted)
 
 Supported Platforms
 -------------------
@@ -60,7 +55,7 @@ Features
 
 # Known issues
 
-- [#47](https://github.com/fabioz/startexplorer/issues/47) Custom commands are broken in Eclipse 4.3/Kepler (platform API change)
+- [#47](https://github.com/jpstotz/startexplorer/issues/47) Custom commands are broken in Eclipse 4.3/Kepler (platform API change)
 
 
 Release Notes
@@ -68,45 +63,45 @@ Release Notes
 
 ### Version 1.7.0 (2015-09-09)
 
-* Configuration for OS X with iTerm (in addition to OS X with the default terminal app). ([#66](https://github.com/fabioz/startexplorer/pull/66), thanks to [sleicht](https://github.com/sleicht)).
+* Configuration for OS X with iTerm (in addition to OS X with the default terminal app). ([#66](https://github.com/jpstotz/startexplorer/pull/66), thanks to [sleicht](https://github.com/sleicht)).
 
 ### Version 1.6.1 (2014-09-16)
 
-* If a relative path is selected in an editor and a StartExplorer action is executed on this text, the path is interpreted relative to the file opened in the editor ([#59](https://github.com/fabioz/startexplorer/issues/59)).
+* If a relative path is selected in an editor and a StartExplorer action is executed on this text, the path is interpreted relative to the file opened in the editor ([#59](https://github.com/jpstotz/startexplorer/issues/59)).
 * Also auto-detect variants of Linux Mint, which do not have `gnome-session` but `cinnamon-session`.
 
 ### Version 1.6.0 (2014-06-18)
 
-* Change license to MIT ([#51](https://github.com/fabioz/startexplorer/issues/51))
+* Change license to MIT ([#51](https://github.com/jpstotz/startexplorer/issues/51))
 * Enable StartExplorer to deal with external resources which are not IResources but still map to a file (thanks to [fabioz](https://github.com/fabioz)).
 
 ### Version 1.5.1 (2013-10-18)
 
-* When the editor shows a file that is _not_ in the Eclipse workspace, you can now right click the editor and open the file/its parent directory in the file manager, open a shell there etc., just like you can do with any resource that is actually part of the workspace. ([#38](https://github.com/fabioz/startexplorer/issues/38))
+* When the editor shows a file that is _not_ in the Eclipse workspace, you can now right click the editor and open the file/its parent directory in the file manager, open a shell there etc., just like you can do with any resource that is actually part of the workspace. ([#38](https://github.com/jpstotz/startexplorer/issues/38))
 * Also, if you open a class from a jar file, you can use StartExplorer from the editor and it will use the jar file or its parent directory as the reference.
 
 ### Version 1.5.0 (2013-09-17)
 
-* If the selected text in the editor is a valid URL and you do "Open in Default Application" on it, your default browser will be launched with this URL. Works also for mailto: links or any other URL flavor. Additionally, on Windows, you can also do "Start File Manager in this Path" to open the URL via Windows Explorer (which supports URLs). Shout out to Linux and Mac users: If the default file manager of your distro (Nautilus, Konqueror, Finder, whatnot...) can handle URLs, please let me know and I enable this behaviour for more platforms. ([#28](https://github.com/fabioz/startexplorer/issues/28))
-* Linux MATE is now supported out of the box (thx to @m-wilde) ([#34](https://github.com/fabioz/startexplorer/issues/34)).
-* No more Windows-specific pre-defined custom commands. StartExplorer now comes with an empty list of custom commands by default. ([#2](https://github.com/fabioz/startexplorer/issues/2))
+* If the selected text in the editor is a valid URL and you do "Open in Default Application" on it, your default browser will be launched with this URL. Works also for mailto: links or any other URL flavor. Additionally, on Windows, you can also do "Start File Manager in this Path" to open the URL via Windows Explorer (which supports URLs). Shout out to Linux and Mac users: If the default file manager of your distro (Nautilus, Konqueror, Finder, whatnot...) can handle URLs, please let me know and I enable this behaviour for more platforms. ([#28](https://github.com/jpstotz/startexplorer/issues/28))
+* Linux MATE is now supported out of the box (thx to @m-wilde) ([#34](https://github.com/jpstotz/startexplorer/issues/34)).
+* No more Windows-specific pre-defined custom commands. StartExplorer now comes with an empty list of custom commands by default. ([#2](https://github.com/jpstotz/startexplorer/issues/2))
 
 ### Version 1.4.1 (2013-03-25)
 
-* Bugfix for paths with whitespaces on Windows, which had been broken due to the fix for issue [#23](https://github.com/fabioz/startexplorer/issues/23).
+* Bugfix for paths with whitespaces on Windows, which had been broken due to the fix for issue [#23](https://github.com/jpstotz/startexplorer/issues/23).
 * Added built-in configuration for msys Git Bash/Git for Windows.
 
 ### Version 1.4.0 (2013-03-24)
 
-* Bugfix for paths with whitespaces on Gnome ([#23](https://github.com/fabioz/startexplorer/issues/23)).
+* Bugfix for paths with whitespaces on Gnome ([#23](https://github.com/jpstotz/startexplorer/issues/23)).
 
 ### Version 1.3.0 (2013-03-04)
 
-* Switched to more permissive license to allow redistribution of StartExplorer in Eclipse distributions ([#22](https://github.com/fabioz/startexplorer/issues/22)).
+* Switched to more permissive license to allow redistribution of StartExplorer in Eclipse distributions ([#22](https://github.com/jpstotz/startexplorer/issues/22)).
 
 ### Version 1.2.1 (2012-08-17)
 
-* Fix GitHub issue [#19](https://github.com/fabioz/startexplorer/issues/19): Custom commands now work in Eclipse 4.2/Juno
+* Fix GitHub issue [#19](https://github.com/jpstotz/startexplorer/issues/19): Custom commands now work in Eclipse 4.2/Juno
 
 ### Version 1.2.0 (2012-03-14)
 
