@@ -1,4 +1,4 @@
-The official branch is: https://github.com/jpstotz/startexplorer
+This is a fork of the official startexplorer branch: https://github.com/fabioz/startexplorer
 
 
 StartExplorer
